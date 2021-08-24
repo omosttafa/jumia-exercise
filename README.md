@@ -72,7 +72,7 @@ After running the back-end server there will be two REST APIs available to consu
 
 This is a GET REST API to get the list of phone numbers from DB and retrun it as JSON response.
 
-Request Example
+Request Example (Considering running on localhost)
 ```
 http://localhost:8080/customers/
 ```
