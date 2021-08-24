@@ -90,7 +90,6 @@ Response Example
     },
     ..
     ..
-    ..
 ]
 ```
 
