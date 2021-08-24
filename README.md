@@ -67,17 +67,20 @@ docker run -p 9090:8080 jumia-exercise-api.jar
 
 After running the back-end server there will be two REST APIs available to consume:
 
-* /customers 
+## getAllCustomers() REST API
+ 
+  To get the list of all customers phone numbers and return it as JSON response.
 
+```
+(GET) /customers 
+```
 
-This is a GET REST API to get the list of phone numbers from DB and retrun it as JSON response.
-
-Request Example (Considering running on localhost)
+* Request Example (Considering running on localhost)
 ```
 http://localhost:8080/customers/
 ```
 
-Response Example
+* Response Example
 ```
 [
     {
@@ -100,9 +103,13 @@ Response Example
 ]
 ```
 
-* /customers/{country}
+## getCustomersFromCountry() REST API
 
-This is a GET REST API to get the list of phone numbers from DB and validate the numbers by a specific regex pattern to identify the valid and not valid numbers. The validation result and country code is being added/included to the response JSON to represent the full list of customers phone numbers including the valid and not valid numbers.
+To get the list of phone numbers from DB and validate the numbers by a specific regex pattern to identify the valid and not valid numbers. The validation result and country code is being added/included to the response JSON to represent the full list of customers phone numbers including the valid and not valid numbers.
+
+```
+(GET) /customers/{country}
+```
 
 * Request Examples
 ```
