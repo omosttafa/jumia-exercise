@@ -10,6 +10,7 @@ This project is a Spring Boot backend REST APIs using CRUD to Integrate with (SQ
 * Spring Boot 2.5.x
 * Maven
 * SQlite3 (CRUD+SQLiteDialect)
+* Dockerfile (for the ability to build the project on a docker image)
 
 # Preparation
 
@@ -17,14 +18,20 @@ Please must install Java 1.8 or even higher version
 
 # Usage
 
-* Run back-end server
+* Run back-end server on local machine
 ```
 cd jumia-exercise-api/target/
 java -jar jumia-exercise-api.jar 
 ```
 
+* Run back-end server on docker
+```
+docker build -t jumia-exercise-api.jar .
+docker run -p 9090:8080 jumia-exercise-api.jar
 ```
 
+
+```
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
