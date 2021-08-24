@@ -10,13 +10,19 @@ This project is a Spring Boot Framwork backend REST APIs using CRUD to Integrate
 * Spring Boot 2.5.x
 * Maven 4
 * SQlite3 (CRUD+SQLiteDialect)
-* Dockerfile (for the ability to build the project on a docker image)
+* Dockerfile (for the ability to build the project in a docker image)
 
 # Preparation
 
 Please must install Java 1.8 or even higher version
 
 # Usage
+
+* Clone Repository
+```
+git clone https://github.com/omosttafa/jumia-exercise-springboot-backend.git
+cd jumia-exercise-springboot-backend
+```
 
 * Run back-end server on local machine
 ```
