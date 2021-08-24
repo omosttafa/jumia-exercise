@@ -142,5 +142,10 @@ http://localhost:8080/customers/mozambique
 ]
 ```
 
+## Conclusion
+
+* By running this Spring Boot backend it means there are running mircoservices represented by REST APIs ready for Frontend application to use.
+* After building and running the backend APIs and testing the requests/responses, you can move forward to the frontend application mentioned in the related projects below.
+
 ## Related Projects
 [Jumia Exercise VUE.JS Frontend](https://github.com/omosttafa/jumia-exercise-vuejs-frontend)
