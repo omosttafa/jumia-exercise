@@ -141,3 +141,6 @@ http://localhost:8080/customers/mozambique
     ..
 ]
 ```
+
+## Related Projects
+[Jumia Exercise VUE.JS Frontend](https://github.com/omosttafa/jumia-exercise-vuejs-frontend)
