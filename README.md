@@ -65,12 +65,12 @@ After running the back-end server there will be two REST APIs available to consu
 
 This is a GET REST API to get the list of phone numbers from DB and retrun it as JSON response.
 
-Request
+Request Example
 ```
 http://localhost:8080/customers/
 ```
 
-Response
+Response Example
 ```
 [
     {
@@ -92,12 +92,13 @@ Response
     ..
     ..
 ]
-    ```
+```
 
 * /customers/{country}
 
 This is a GET REST API to get the list of phone numbers from DB and validate the numbers by a specific regex pattern to identify the valid and not valid numbers. The validation result and country code is being added/included to the response JSON to represent the full list of customers phone numbers including the valid and not valid numbers.
 
+* Request Examples
 ```
 http://localhost:8080/customers/cameron
 http://localhost:8080/customers/ethiopia
@@ -106,17 +107,24 @@ http://localhost:8080/customers/mozambique
 http://localhost:8080/customers/mozambique
 ```
 
-### Compiles and hot-reloads for development
+* Response Example
 ```
-npm run serve
+[
+    {
+        "id": "31",
+        "name": "EMILE CHRISTIAN KOUKOU DIKANDA HONORE ",
+        "phone": "(237) 697151594",
+        "validation": "valid",
+        "countryCode": "+237"
+    },
+    {
+        "id": "32",
+        "name": "MICHAEL MICHAEL",
+        "phone": "(237) 677046616",
+        "validation": "valid",
+        "countryCode": "+237"
+    },
+    ..
+    ..
+]
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# jumia-exercise-vuejs-frontend
