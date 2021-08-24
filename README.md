@@ -2,13 +2,13 @@
 
 
 # Overview
-This project is a Spring Boot backend REST APIs using CRUD to Integrate with (SQLite 3) DB to get a list of phone numbers and categorizing this list by country, state, country code and number.
+This project is a Spring Boot Framwork backend REST APIs using CRUD to Integrate with (SQLite 3) DB to get a list of phone numbers and categorizing this list by country, state, country code and number.
 
 # Main technology stack
 
 * Java 1.8+
 * Spring Boot 2.5.x
-* Maven
+* Maven 4.0.0
 * SQlite3 (CRUD+SQLiteDialect)
 * Dockerfile (for the ability to build the project on a docker image)
 
@@ -105,7 +105,7 @@ http://localhost:8080/customers/
 
 ## getCustomersFromCountry() API
 
-To get the list of phone numbers from DB and validate the numbers by a specific regex pattern to identify the valid and not valid numbers. The validation result and country code is being added/included to the response JSON to represent the full list of customers phone numbers including the valid and not valid numbers.
+  To get the list of phone numbers from DB and validate the numbers by a country regex pattern to identify the valid and not valid numbers. The validation result and country code is being added/included to the response JSON to represent the full list of customers phone numbers including the valid and not valid numbers.
 
 ```
 (GET) /customers/{country}
@@ -120,22 +120,22 @@ http://localhost:8080/customers/mozambique
 http://localhost:8080/customers/mozambique
 ```
 
-* Response Example
+* Response Example (/morocco)
 ```
 [
     {
-        "id": "31",
-        "name": "EMILE CHRISTIAN KOUKOU DIKANDA HONORE ",
-        "phone": "(237) 697151594",
-        "validation": "valid",
-        "countryCode": "+237"
+        "id": "0",
+        "name": "Walid Hammadi",
+        "phone": "(212) 6007989253",
+        "validation": "not valid",
+        "countryCode": "+212"
     },
     {
-        "id": "32",
-        "name": "MICHAEL MICHAEL",
-        "phone": "(237) 677046616",
+        "id": "1",
+        "name": "Yosaf Karrouch",
+        "phone": "(212) 698054317",
         "validation": "valid",
-        "countryCode": "+237"
+        "countryCode": "+212"
     },
     ..
     ..
@@ -144,8 +144,9 @@ http://localhost:8080/customers/mozambique
 
 ## Conclusion
 
-* By running this Spring Boot backend it means there are running mircoservices represented by REST APIs ready for Frontend application to use.
+* By running this Spring Boot backend it means there are running mircoservices represented through REST APIs ready for Frontend application to use.
 * After building and running the backend APIs and testing the requests/responses, you can move forward to the frontend application mentioned in the related projects below.
+* Frontend Application is implemented using VUE.JS Framework.
 
 ## Related Projects
 [Jumia Exercise VUE.JS Frontend](https://github.com/omosttafa/jumia-exercise-vuejs-frontend)
