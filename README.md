@@ -65,32 +65,33 @@ After running the back-end server there will be two REST APIs available to consu
 
 This is a GET REST API to get the list of phone numbers from DB and retrun it as JSON response.
 
-  Request
-    ```
-    http://localhost:8080/customers/
-    ```
-  Response
-    ```
-    [
-        {
-            "id": "0",
-            "name": "Walid Hammadi",
-            "phone": "(212) 6007989253"
-        },
-        {
-            "id": "1",
-            "name": "Yosaf Karrouch",
-            "phone": "(212) 698054317"
-        },
-        {
-            "id": "2",
-            "name": "Younes Boutikyad",
-            "phone": "(212) 6546545369"
-        },
-        ..
-        ..
-        ..
-    ]
+Request
+```
+http://localhost:8080/customers/
+```
+
+Response
+```
+[
+    {
+        "id": "0",
+        "name": "Walid Hammadi",
+        "phone": "(212) 6007989253"
+    },
+    {
+        "id": "1",
+        "name": "Yosaf Karrouch",
+        "phone": "(212) 698054317"
+    },
+    {
+        "id": "2",
+        "name": "Younes Boutikyad",
+        "phone": "(212) 6546545369"
+    },
+    ..
+    ..
+    ..
+]
     ```
 
 * /customers/{country}
